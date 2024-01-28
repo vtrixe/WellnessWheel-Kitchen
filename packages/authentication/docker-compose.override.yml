@@ -10,8 +10,8 @@ services:
 
   postgres:
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=tghtyrrt
+      - POSTGRES_USER=api
+      - POSTGRES_PASSWORD=development_pass
       - POSTGRES_MULTIPLE_DATABASES="auth-api","auth-api-testing"
     volumes:
       - ./docker-utils:/docker-entrypoint-initdb.d

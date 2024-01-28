@@ -1,10 +1,6 @@
 version: '3.6'
 services:
   node:
-    environment:
-      - DB_DIALECT=postgres
-      - DATABASE_URL=postgresql://postgres:tghtyrrt@postgres:5432/caldotcom?schema=public
-      - NODE_ENV=production
     build: .
     volumes:
       - .:/app
